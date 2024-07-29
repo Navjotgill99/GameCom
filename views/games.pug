@@ -1,0 +1,54 @@
+extends common/layout
+
+block content
+  .container
+    h1#top Video Games
+
+    nav
+      ul
+        li: a(href="#games-section") Games
+        li: a(href="#platforms-section") Gaming Platforms
+        li: a(href="#franchises-section") Game Franchises
+        li: a(href="#reviews-section") Game Reviews
+
+    .section-header
+      h2#games-section Games
+    .card-container
+      each game in games
+        .card
+          img.card-img(src=game.image.small_url, alt=game.name)
+          .card-content
+            h3= game.name
+            p= game.deck
+
+    .section-header
+      h2#platforms-section Gaming Platforms
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each platform in platforms
+        .card
+          img.card-img(src=platform.image.small_url, alt=platform.name)
+          .card-content
+            h3= platform.name
+            p= platform.deck
+
+    .section-header
+      h2#franchises-section Game Franchises
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each franchise in franchises
+        .card
+          .card-content
+            h3= franchise.name
+            p= franchise.deck
+
+    .section-header
+      h2#reviews-section Game Reviews
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each review in reviews
+        .card
+          .card-content
+            h3= review.game.name
+            p Score: #{review.score}/5
+            p= review.deck

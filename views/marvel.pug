@@ -1,0 +1,55 @@
+extends common/layout
+
+block content
+  .container
+    h1#top Marvel Universe
+
+    nav
+      ul
+        li: a(href="#comics-section") Marvel Comics
+        li: a(href="#characters-section") Marvel Characters
+        li: a(href="#series-section") Marvel Series
+        li: a(href="#events-section") Marvel Events
+
+    .section-header
+      h2#comics-section Marvel Comics
+    .card-container
+      each comic in comics
+        .card
+          img.card-img(src=`${comic.thumbnail.path}.${comic.thumbnail.extension}`, alt=comic.title)
+          .card-content
+            h3= comic.title
+            p= comic.description
+
+    .section-header
+      h2#characters-section Marvel Characters
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each character in characters
+        .card
+          img.card-img(src=`${character.thumbnail.path}.${character.thumbnail.extension}`, alt=character.name)
+          .card-content
+            h3= character.name
+            p= character.description
+
+    .section-header
+      h2#series-section Marvel Series
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each serie in series
+        .card
+          img.card-img(src=`${serie.thumbnail.path}.${serie.thumbnail.extension}`, alt=serie.title)
+          .card-content
+            h3= serie.title
+            p= serie.description
+
+    .section-header
+      h2#events-section Marvel Events
+      a.back-to-top(href="#top") Back to Top
+    .card-container
+      each event in events
+        .card
+          img.card-img(src=`${event.thumbnail.path}.${event.thumbnail.extension}`, alt=event.title)
+          .card-content
+            h3= event.title
+            p= event.description

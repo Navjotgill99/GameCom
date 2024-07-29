@@ -1,0 +1,153 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Russo+One&display=swap');
+
+/* General container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Home section styling */
+.home section {
+  margin-bottom: 60px;
+}
+
+/* Welcome section styling */
+.welcome h1 {
+  font-family: "Russo One", sans-serif;
+  color: #e50914;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styling in the welcome section */
+.welcome .subtitle {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+/* Featured section styling */
+.featured {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Featured content styling */
+.featured-content {
+  font-family: "Montserrat", sans-serif;
+  flex: 1;
+}
+
+/* Featured image container */
+.featured-image {
+  flex: 1;/* Sets flex-grow property */
+}
+
+/* Styling for images in the featured section */
+.featured-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Categories list styling */
+.categories ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Styling for individual category items */
+.categories li {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 30px;
+  width: calc(50% - 15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for category items */
+.categories li:hover {
+  transform: translateY(-5px);/* Moves the item up on hover */
+}
+
+/* Category heading styling */
+.categories h3 {
+  font-family: "Russo One", sans-serif;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+/* Category description styling */
+.categories p {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.button {
+  font-family: "Russo One", sans-serif;
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #f40612;
+}
+
+/* News grid styling */
+.news-grid {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Defines the grid template */
+  gap: 20px;/* Adds gap between grid items */
+}
+
+/* Individual news item styling */
+.news-item {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* News item heading styling */
+.news-item h3 {
+  font-family: "Russo One", sans-serif;
+  color: #1a1a1a;
+  margin-top: 0;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .featured {
+    flex-direction: column;/* Displays items in a column */
+  }
+
+  .categories ul {
+    flex-direction: column;
+  }
+
+  .categories li {
+    width: 100%;
+  }
+}

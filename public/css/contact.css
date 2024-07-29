@@ -1,0 +1,75 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Russo+One&display=swap');
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Styling for the main heading inside the contact section */
+.contact h1 {
+    font-family: "Russo One", sans-serif;
+    color: #e50914;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Styling for subheadings inside the contact section */
+.contact h2 {
+    font-family: "Russo One", sans-serif;
+    color: #1a1a1a;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs inside the contact section */
+.contact p {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styling for form groups inside the contact section */
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling for labels inside the contact section */
+.contact label {
+    font-family: "Montserrat", sans-serif;
+    display: block;/* Displays the label as a block element */
+    margin-bottom: 5px;
+}
+
+/* Styling for text inputs, email inputs, and textareas inside the contact section */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;/* Sets the width to 100% of its container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the button inside the contact section */
+.contact button {
+    font-family: "Russo One", sans-serif;
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;/* Removes the default border */
+    border-radius: 5px;
+    cursor: pointer;/* Changes the cursor to a pointer when hovering */
+}
+
+/* Styling for the button on hover inside the contact section */
+.contact button:hover {
+    background-color: #f40612;
+}

@@ -1,0 +1,65 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Russo+One&display=swap');
+
+/* Styling for the header */
+#header {
+    background-color: #1a1a1a;
+    font-family: "Russo One", sans-serif;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the site name */
+#site-name {
+    margin: 0;
+}
+
+/* Styling for the site name link */
+#site-name a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;/* Adds a transition effect for color */
+}
+
+/* Styling for the site name link on hover */
+#site-name a:hover {
+    color: #f40612;
+}
+
+/* Styling for the navigation */
+#nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Styling for navigation links */
+#nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for navigation links on hover */
+#nav a:hover {
+    background-color: #333333;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;/* Wraps navigation items if they overflow */
+    }
+}

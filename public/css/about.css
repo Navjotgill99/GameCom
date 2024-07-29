@@ -1,0 +1,73 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Russo+One&display=swap');
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Styling for the main heading inside the about section */
+.about h1 {
+    font-family: "Russo One", sans-serif;
+    color: #e50914;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Styling for subheadings inside the about section */
+.about h2 {
+    font-family: "Russo One", sans-serif;
+    color: #1a1a1a;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs inside the about section */
+.about p {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styling for images inside the about section */
+.about-image {
+    width: 100%;/* Sets the width to 100% of its container */
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 30px auto;/* Centers the image and adds margin above and below */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* Adds a shadow effect to the image */
+}
+
+/* Styling for unordered lists inside the about section */
+.about ul {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+/* Styling for list items inside the about section */
+.about li {
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraphs inside the contact section */
+.contact p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* General styling for sections */
+section {
+    margin-bottom: 50px;
+}

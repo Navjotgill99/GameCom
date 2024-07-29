@@ -1,0 +1,41 @@
+extends common/layout
+
+block content
+  .container
+    .home
+      section.welcome
+        h1 Welcome to Video Games and Comics Info
+        p.subtitle Dive into the exciting worlds of Marvel comics and video games!
+      
+      section.featured
+        .featured-content
+          h2 Featured Content
+          p Explore the latest updates in the world of comics and gaming. From epic Marvel storylines to groundbreaking video game releases, we've got you covered. Stay informed about the newest comic book series, character developments, and cinematic adaptations that are taking the world by storm. Whether you're a lifelong fan or a newcomer, our curated content will guide you through the rich narratives and stunning visuals that define these beloved universes. Join us as we delve into exclusive interviews, behind-the-scenes insights, and reviews that highlight the best of what comics and video games have to offer.
+        .featured-image
+          img(src="https://images.unsplash.com/photo-1640955011254-39734e60b16f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHZpZGVvJTIwZ2FtZXN8ZW58MHx8MHx8fDA%3D" alt="Featured Image")
+      
+      section.categories
+        h2 Explore Our Categories
+        ul
+          li
+            h3 Marvel
+            p Discover Marvel Comics, Characters, Series, and Events.
+            a.button(href='/marvel') Go to Marvel Page
+          li
+            h3 Games
+            p Explore Video Games, Platforms, Franchises, and Reviews.
+            a.button(href='/games') Go to Games Page
+      
+      section.latest-news
+        h2 Latest News
+        .news-grid
+          .news-item
+            h3 New Marvel Series Announced
+            p Marvel Studios reveals plans for an exciting new TV series. Stay tuned for more details!
+          .news-item
+            h3 Game of the Year Contenders
+            p Check out our list of top contenders for this year's Game of the Year award.
+          .news-item
+            h3 Comic Con Updates
+            p Get the latest updates and announcements from this year's Comic Con event.
+

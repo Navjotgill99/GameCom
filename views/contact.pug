@@ -1,0 +1,28 @@
+extends common/layout
+
+block content
+  .container
+    .contact
+      section.introduction
+        h1 Contact Us
+        p We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out using the form below or through our social media channels.
+
+      section.contact-form
+        h2 Get in Touch
+        form(action="/send-message", method="POST")
+          .form-group
+            label(for="name") Name
+            input(type="text" id="name" name="name" required)
+          .form-group
+            label(for="email") Email
+            input(type="email" id="email" name="email" required)
+          .form-group
+            label(for="message") Message
+            textarea(id="message" name="message" rows="5" required)
+          button(type="submit") Send Message
+
+      section.contact-info
+        h2 Contact Information
+        p If you prefer to reach out directly, you can contact us at:
+        p Email: contact@gamecom.com
+        p Phone: (123) 456-7890

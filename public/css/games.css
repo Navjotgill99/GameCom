@@ -1,0 +1,174 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+NSW:wght@100..400&family=Russo+One&display=swap');
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for main headings */
+h1 {
+    font-family: "Russo One", sans-serif;
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling for subheadings */
+h2 {
+    font-family: "Russo One", sans-serif;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e50914;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Styling for navigation */
+nav {
+    margin-bottom: 30px;
+}
+
+/* Styling for unordered list inside navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;/* Displays list items in a row */
+    justify-content: center;
+    flex-wrap: wrap;/* Wraps the list items if they overflow */
+}
+
+/* Styling for list items inside navigation */
+nav ul li {
+    margin: 0 10px 10px 10px;
+}
+
+/* Styling for links inside navigation */
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for links on hover inside navigation */
+nav ul li a:hover {
+    background-color: #e50914;
+    color: #fff;
+}
+
+/* Styling for "back to top" link */
+.back-to-top {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+/* Styling for "back to top" link on hover */
+.back-to-top:hover {
+    background-color: #e50914;
+    color: #fff;
+}
+
+/* Styling for section headers */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for card container */
+.card-container {
+    display: grid;/* Displays the card container as a grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));/* Sets the grid layout */
+    gap: 20px;/* Adds gap between grid items */
+}
+
+/* Styling for individual cards */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Styling for cards on hover */
+.card:hover {
+    transform: translateY(-5px);/* Moves the card up slightly on hover */
+}
+
+/* Styling for card images */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;/* Ensures the image covers the entire area */
+}
+
+/* Styling for card content */
+.card-content {
+    padding: 15px;
+}
+
+/* Styling for card titles */
+.card-content h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Styling for card descriptions */
+.card-content p {
+    font-family: "Montserrat", sans-serif;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .back-to-top {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Responsive design for screens smaller than 480px */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
