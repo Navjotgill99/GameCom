@@ -58,13 +58,6 @@ app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us" }); // Render the "contact" view with a title
 });
 
-// Handle POST request for contact form submission
-app.post("/contact", (req, res) => {
-  const { name, email, message } = req.body;
-  // Redirect to the homepage after form submission
-  res.redirect("/");
-});
-
 // Start the server and listen on the specified port
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`); // Log a message indicating that the server is running
